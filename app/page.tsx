@@ -2,11 +2,13 @@ import Image from "next/image";
 import SocialLinks from "./components/SocialLinks";
 import Typewriter from "./components/Typewriter";
 
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+
 export default function Home() {
   return (
     <main
       className="relative flex flex-1 flex-col overflow-hidden bg-[#2fc6f5] bg-cover bg-center"
-      style={{ backgroundImage: "url(/cloud-bg.png)" }}
+      style={{ backgroundImage: `url(${basePath}/cloud-bg.png)` }}
     >
       <section className="relative z-10 mx-auto flex w-full max-w-7xl flex-1 flex-col items-center justify-center gap-16 px-6 py-20 lg:flex-row lg:gap-8 lg:px-12">
         {/* intro */}
@@ -27,7 +29,7 @@ export default function Home() {
           <SocialLinks />
 
           <a
-            href="/resume.pdf"
+            href={`${basePath}/resume.pdf`}
             target="_blank"
             rel="noopener noreferrer"
             className="mt-2 inline-flex h-14 w-full max-w-xs items-center justify-center rounded-md bg-[#3D7EF1] text-lg font-medium text-white shadow-lg shadow-blue-500/30 transition-colors hover:bg-[#2f63d8]"
@@ -39,7 +41,7 @@ export default function Home() {
         {/* illustration */}
         <div className="flex w-full justify-center lg:w-1/2">
           <Image
-            src="/webdev.svg"
+            src={`${basePath}/webdev.svg`}
             alt="Illustration of a developer coding at a desk"
             width={640}
             height={520}

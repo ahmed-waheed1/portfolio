@@ -1,5 +1,7 @@
 import Image from "next/image";
 
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+
 const SOCIALS = [
   {
     name: "GitHub",
@@ -25,7 +27,12 @@ export default function SocialLinks() {
           aria-label={social.name}
           className="transition-transform hover:-translate-y-1"
         >
-          <Image src={social.icon} alt={social.name} width={40} height={40} />
+          <Image
+            src={`${basePath}${social.icon}`}
+            alt={social.name}
+            width={40}
+            height={40}
+          />
         </a>
       ))}
     </div>

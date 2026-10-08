@@ -1,7 +1,7 @@
 import type { NextConfig } from "next";
 
 // Repo name on GitHub Pages; the site is served from this subpath.
-const basePath = "/portfolio";
+const basePath = "";
 
 const nextConfig: NextConfig = {
   output: "export",

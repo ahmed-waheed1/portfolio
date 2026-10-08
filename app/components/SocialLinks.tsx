@@ -29,9 +29,10 @@ export default function SocialLinks() {
         >
           <Image
             src={`${basePath}${social.icon}`}
-            alt={social.name}
+            alt=""
             width={40}
             height={40}
+            loading="eager"
           />
         </a>
       ))}

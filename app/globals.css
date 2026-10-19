@@ -14,6 +14,13 @@
   --animate-float-slow: float-slow 5s ease-in-out infinite;
 }
 
+@theme {
+  --color-brand-sky: #2fc6f5;
+  --color-brand-accent: #2a45d4;
+  --color-brand-cta: #2f63d8;
+  --color-brand-cta-hover: #2754bd;
+}
+
 @keyframes cursor-blink {
   0%,
   100% {

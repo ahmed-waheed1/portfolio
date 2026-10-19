@@ -1,6 +1,7 @@
 import type { NextConfig } from "next";
 
-// Repo name on GitHub Pages; the site is served from this subpath.
+// Empty because the site is served from the root of the custom domain
+// ahmedwaheed.me. Set to "/<repo>" if it's ever served from a GitHub Pages subpath.
 const basePath = "";
 
 const nextConfig: NextConfig = {

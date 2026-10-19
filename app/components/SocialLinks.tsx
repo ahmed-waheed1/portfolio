@@ -24,9 +24,9 @@ export default function SocialLinks() {
           href={social.href}
           target="_blank"
           rel="noopener noreferrer"
-          aria-label={social.name}
-          className="transition-transform hover:-translate-y-1"
+          className="block rounded-md transition-transform motion-safe:hover:-translate-y-1 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-gray-900"
         >
+          <span className="sr-only">{social.name} (opens in new tab)</span>
           <Image
             src={`${basePath}${social.icon}`}
             alt=""

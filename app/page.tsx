@@ -1,6 +1,9 @@
 import Image from "next/image";
+import About from "./components/About";
 import Contact from "./components/Contact";
+import Experience from "./components/Experience";
 import Projects from "./components/Projects";
+import Skills from "./components/Skills";
 import SocialLinks from "./components/SocialLinks";
 import Typewriter from "./components/Typewriter";
 
@@ -59,7 +62,13 @@ export default function Home() {
         </section>
       </div>
 
+      <About />
+
       <Projects />
+
+      <Skills />
+
+      <Experience />
 
       <Contact />
     </main>

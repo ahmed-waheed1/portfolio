@@ -6,6 +6,10 @@ const basePath = "";
 
 const nextConfig: NextConfig = {
   output: "export",
+  // Export each page as <route>/index.html. Next.js also writes a <route>/
+  // folder of prefetch data, so a <route>.html file would sit beside a
+  // folder of the same name, and GitHub Pages would serve the folder.
+  trailingSlash: true,
   basePath,
   env: {
     NEXT_PUBLIC_BASE_PATH: basePath,

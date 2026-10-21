@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import SectionHeading from "./SectionHeading";
 
 const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
@@ -14,6 +15,7 @@ type Project = {
   repo: string;
   image: string;
   status?: string;
+  caseStudy?: string;
 };
 
 const PROJECTS: Project[] = [
@@ -27,6 +29,7 @@ const PROJECTS: Project[] = [
     repo: "hayya",
     image: "/projects/hayya.webp",
     status: "In closed testing on Google Play",
+    caseStudy: "/projects/hayya/",
   },
   {
     name: "Yalla Quiz",
@@ -151,19 +154,30 @@ function ProjectCard({ project }: { project: Project }) {
           ))}
         </ul>
 
-        <a
-          href={`${GITHUB}/${project.repo}`}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex min-h-11 w-fit items-center gap-2 rounded-sm font-semibold text-brand-accent hover:text-brand-cta-hover focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-gray-900"
-        >
-          View source
-          <span className="sr-only">
-            {" "}
-            for {project.name} on GitHub (opens in new tab)
-          </span>
-          <ArrowIcon />
-        </a>
+        <div className="flex flex-wrap items-center gap-x-6">
+          {project.caseStudy && (
+            <Link
+              href={project.caseStudy}
+              className="inline-flex min-h-11 w-fit items-center gap-2 rounded-sm font-semibold text-brand-accent hover:text-brand-cta-hover focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-gray-900"
+            >
+              Read case study
+              <span className="sr-only"> for {project.name}</span>
+            </Link>
+          )}
+          <a
+            href={`${GITHUB}/${project.repo}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex min-h-11 w-fit items-center gap-2 rounded-sm font-semibold text-brand-accent hover:text-brand-cta-hover focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-gray-900"
+          >
+            View source
+            <span className="sr-only">
+              {" "}
+              for {project.name} on GitHub (opens in new tab)
+            </span>
+            <ArrowIcon />
+          </a>
+        </div>
       </div>
     </article>
   );

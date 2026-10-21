@@ -1,4 +1,5 @@
 import Image from "next/image";
+import SectionHeading from "./SectionHeading";
 
 const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 
@@ -173,27 +174,16 @@ export default function Projects() {
     <section
       id="projects"
       aria-labelledby="projects-heading"
-      className="relative bg-white"
+      className="bg-brand-sky/8"
     >
-      {/* fades the hero's pale cloud tops into this section's white */}
-      <div
-        aria-hidden="true"
-        className="pointer-events-none absolute inset-x-0 bottom-full h-20 bg-linear-to-b from-transparent to-white lg:h-48"
-      />
-
-      <div className="mx-auto flex w-full max-w-7xl flex-col gap-12 px-6 pt-12 pb-16 lg:px-12">
+      <div className="mx-auto flex w-full max-w-7xl flex-col gap-12 px-6 py-24 lg:px-12">
         <div className="flex flex-wrap items-end justify-between gap-6">
-          <div className="flex flex-col gap-4">
-            <p className="text-sm font-semibold uppercase tracking-[0.12em] text-brand-accent">
-              Projects
-            </p>
-            <h2
-              id="projects-heading"
-              className="font-heading text-4xl font-extrabold leading-tight tracking-tight text-gray-900"
-            >
-              Things I&apos;ve <span className="text-brand-accent">built</span>
-            </h2>
-          </div>
+          <SectionHeading
+            id="projects-heading"
+            eyebrow="Projects"
+            title="Things I've"
+            accent="built"
+          />
           <a
             href={GITHUB}
             target="_blank"

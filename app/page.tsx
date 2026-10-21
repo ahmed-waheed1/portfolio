@@ -2,6 +2,7 @@ import Image from "next/image";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Experience from "./components/Experience";
+import OpenToWorkBadge from "./components/OpenToWorkBadge";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 import SocialLinks from "./components/SocialLinks";
@@ -19,6 +20,8 @@ export default function Home() {
         <section className="mx-auto flex w-full max-w-7xl flex-1 flex-col items-center justify-center gap-16 px-6 py-20 lg:flex-row lg:gap-8 lg:px-12">
           {/* intro */}
           <div className="flex w-full flex-col items-start gap-7 lg:w-1/2">
+            <OpenToWorkBadge />
+
             <h1 className="font-heading text-4xl font-extrabold leading-tight tracking-tight sm:text-5xl">
               <span className="text-gray-900">Hi, I am Ahmed</span>
               <span className="block min-h-[1.2em] text-brand-accent">

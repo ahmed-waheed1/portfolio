@@ -9,13 +9,13 @@ export default function Contact() {
     <section
       id="contact"
       aria-labelledby="contact-heading"
-      className="relative -mt-48 overflow-hidden"
+      className="relative overflow-hidden"
     >
       {/*
-        The hero's clouds, flipped so the page ends the way it starts. The
-        section overlaps the hero by 12rem and this layer fades in over that
-        overlap so the two cloud images blend without a seam. The mask runs
-        "to top" because the layer itself is flipped.
+        The hero's clouds, flipped so the page ends the way it starts. This
+        layer fades in from transparent over its top 12rem so it blends into
+        the white section above without a seam. The mask runs "to top"
+        because the layer itself is flipped.
       */}
       <div
         aria-hidden="true"
@@ -23,7 +23,7 @@ export default function Contact() {
         style={{ backgroundImage: `url(${basePath}/cloud-bg.png)` }}
       />
 
-      <div className="relative mx-auto flex w-full max-w-7xl flex-col items-center gap-7 px-6 pt-96 pb-28 text-center lg:px-12">
+      <div className="relative mx-auto flex w-full max-w-7xl flex-col items-center gap-7 px-6 pt-64 pb-28 lg:pt-80 text-center lg:px-12">
         <h2
           id="contact-heading"
           className="font-heading text-4xl font-extrabold leading-tight tracking-tight text-gray-900 sm:text-5xl"

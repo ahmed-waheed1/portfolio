@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Contact from "./components/Contact";
+import Projects from "./components/Projects";
 import SocialLinks from "./components/SocialLinks";
 import Typewriter from "./components/Typewriter";
 
@@ -57,6 +58,8 @@ export default function Home() {
           </div>
         </section>
       </div>
+
+      <Projects />
 
       <Contact />
     </main>

@@ -301,10 +301,7 @@ export default function HayyaCaseStudy() {
         </div>
       </section>
 
-      <div className="mx-auto flex w-full max-w-7xl flex-wrap items-center justify-between gap-6 px-6 pt-16 lg:px-12">
-        <p className="text-lg text-gray-700">
-          Want the full picture? The README and docs cover every decision.
-        </p>
+      <div className="mx-auto flex w-full max-w-7xl justify-center px-6 pt-16 lg:px-12">
         <Link
           href="/#projects"
           className="inline-flex min-h-12 items-center gap-2 rounded-md border border-brand-cta bg-white px-5 font-medium text-brand-accent transition-colors hover:bg-indigo-50 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-gray-900"

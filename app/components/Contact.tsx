@@ -69,13 +69,6 @@ export default function Contact() {
           </a>
         </div>
 
-        <a
-          href={`mailto:${EMAIL}`}
-          className="rounded-sm text-gray-800 underline-offset-4 hover:text-brand-accent hover:underline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-gray-900"
-        >
-          {EMAIL}
-        </a>
-
         <SocialLinks />
       </div>
     </section>

@@ -6,12 +6,12 @@ const SOCIALS = [
   {
     name: "GitHub",
     href: "https://github.com/ahmed-waheed1",
-    icon: "/github.png",
+    icon: "/github.svg",
   },
   {
     name: "LinkedIn",
     href: "https://linkedin.com/in/ahmed-waheed11",
-    icon: "/linkedin.png",
+    icon: "/linkedin.svg",
   },
 ];
 

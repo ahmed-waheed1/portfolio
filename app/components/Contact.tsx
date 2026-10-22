@@ -23,7 +23,7 @@ export default function Contact() {
         style={{ backgroundImage: `url(${basePath}/cloud-bg.png)` }}
       />
 
-      <div className="relative mx-auto flex w-full max-w-7xl flex-col items-center gap-7 px-6 pt-64 pb-28 lg:pt-80 text-center lg:px-12">
+      <div className="relative mx-auto flex w-full max-w-7xl flex-col items-center gap-7 px-6 pt-64 pb-44 lg:pt-80 text-center lg:px-12">
         <h2
           id="contact-heading"
           className="font-heading text-4xl font-extrabold leading-tight tracking-tight text-gray-900 sm:text-5xl"

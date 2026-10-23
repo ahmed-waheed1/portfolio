@@ -24,7 +24,7 @@ const PROJECTS: Project[] = [
     arabicName: "حيّ",
     tagline: "Offline prayer times, adhan & Qibla",
     description:
-      "Calculates prayer times on the device, plays the adhan on Android's alarm stream with schedules restored after a reboot, and corrects the Qibla compass to true north with its own World Magnetic Model, tested against all 100 of NOAA's reference values.",
+      "Calculates prayer times on the device. It plays the adhan on Android's alarm stream with schedules restored after a reboot and corrects the Qibla compass to true north with its own World Magnetic Model, tested against all 100 of NOAA's reference values.",
     tags: ["Bloc (Cubit)", "get_it", "Hive", "WorkManager"],
     repo: "hayya",
     image: "/projects/hayya.webp",
@@ -55,7 +55,7 @@ const PROJECTS: Project[] = [
     name: "Body Lens",
     tagline: "On-device posture & body analysis",
     description:
-      "Detects 33 body landmarks fully on-device with Google ML Kit, draws a live skeleton overlay from photos or the camera, and scores symmetry from 0 to 100 with posture issues called out.",
+      "Detects 33 body landmarks fully on-device with Google ML Kit, draws a live skeleton overlay from photos or the camera and scores symmetry from 0 to 100 with posture issues called out.",
     tags: ["ML Kit", "Camera", "Riverpod", "Clean Architecture"],
     repo: "body_lens",
     image: "/projects/body-lens.webp",
@@ -64,7 +64,7 @@ const PROJECTS: Project[] = [
     name: "Spendly",
     tagline: "Offline-first budget & expense tracker",
     description:
-      "Per-category budgets with 80% spending alerts, pie and bar charts, CSV and PDF export, and full English and Arabic support with automatic right-to-left layout.",
+      "Per-category budgets with 80% spending alerts, pie and bar charts, CSV and PDF export and full English and Arabic support with automatic right-to-left layout.",
     tags: ["Riverpod", "Drift", "go_router", "fl_chart"],
     repo: "spendly",
     image: "/projects/spendly.webp",
@@ -73,7 +73,7 @@ const PROJECTS: Project[] = [
     name: "Rootine",
     tagline: "Habit tracker & streak analytics",
     description:
-      "Daily check-ins, current and longest streaks, a 30-day heatmap, and reminders that reschedule after a reboot. The streak calculator is pure Dart and covered by unit tests.",
+      "Daily check-ins, current and longest streaks, a 30-day heatmap and reminders that reschedule after a reboot. The streak calculator is pure Dart and covered by unit tests.",
     tags: ["Riverpod", "Hive", "fl_chart", "Unit tests"],
     repo: "rootine",
     image: "/projects/rootine.webp",

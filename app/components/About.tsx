@@ -7,7 +7,7 @@ const FACTS = [
     value: "98%",
     label: "Final score in NTI's Mobile App Development program",
   },
-  { value: "2 yrs", label: "On the Flutter track at GDG on Campus Zagazig" },
+  { value: "2", label: "Years on the Flutter track at GDG on Campus Zagazig" },
 ];
 
 export default function About() {
@@ -38,7 +38,7 @@ export default function About() {
           <p className="text-lg leading-8 text-gray-800">
             I graduated in 2026 with a Bachelor of Computers and Information
             from Zagazig University, came through the ALX Software Engineering
-            Program, and served on the Flutter Core Team at GDG on Campus
+            Program and served on the Flutter Core Team at GDG on Campus
             Zagazig. I&apos;m looking for a junior role where I can ship real
             features and keep learning.
           </p>

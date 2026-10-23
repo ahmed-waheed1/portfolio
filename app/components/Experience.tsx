@@ -25,7 +25,7 @@ const EXPERIENCE = [
     org: "ALX Africa",
     points: [
       "Selected from thousands of applicants for an intensive 12-month, project-based program covering C, shell scripting, system engineering and DevOps.",
-      "Contributed to open source during Hacktoberfest 2023, and strengthened data structures, algorithms, Linux and Git.",
+      "Contributed to open source during Hacktoberfest 2023, and strengthened my skills in data structures, algorithms, Linux and Git.",
     ],
   },
 ];

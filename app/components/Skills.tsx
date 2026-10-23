@@ -16,7 +16,7 @@ const SKILL_GROUPS = [
   },
   {
     title: "Architecture",
-    skills: ["Clean Architecture", "MVVM", "get_it", "Design Patterns", "OOP"],
+    skills: ["Clean Architecture", "MVVM", "get_it", "Design patterns", "OOP"],
   },
   {
     title: "Networking & APIs",
@@ -68,7 +68,7 @@ const SKILL_GROUPS = [
       "Unit tests",
       "Widget tests",
       "End-to-end tests",
-      "DS & Algorithms",
+      "Data structures & algorithms",
     ],
   },
 ];

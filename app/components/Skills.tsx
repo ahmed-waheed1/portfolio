@@ -9,7 +9,7 @@ const SKILL_GROUPS = [
       "Android",
       "iOS",
       "Web",
-      "Bloc / Cubit",
+      "Bloc (Cubit)",
       "Riverpod",
       "Provider",
     ],

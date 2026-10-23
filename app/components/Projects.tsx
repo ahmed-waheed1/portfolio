@@ -25,7 +25,7 @@ const PROJECTS: Project[] = [
     tagline: "Offline prayer times, adhan & Qibla",
     description:
       "Calculates prayer times on the device, plays the adhan on Android's alarm stream with schedules restored after a reboot, and corrects the Qibla compass to true north with its own World Magnetic Model, tested against all 100 of NOAA's reference values.",
-    tags: ["Bloc", "get_it", "Hive", "WorkManager"],
+    tags: ["Bloc (Cubit)", "get_it", "Hive", "WorkManager"],
     repo: "hayya",
     image: "/projects/hayya.webp",
     status: "In closed testing on Google Play",
@@ -37,7 +37,7 @@ const PROJECTS: Project[] = [
     tagline: "Real-time multiplayer trivia",
     description:
       "Friends join a room with a code or QR scan and race the same server-synced clock. If the host drops, the next player takes over, and every player sees their own language, English or Arabic, in the same room.",
-    tags: ["Firebase Realtime DB", "Bloc", "fpdart", "Web"],
+    tags: ["Firebase Realtime DB", "Bloc (Cubit)", "fpdart", "Web"],
     repo: "yalla_quiz",
     image: "/projects/yalla-quiz.webp",
   },
@@ -47,7 +47,7 @@ const PROJECTS: Project[] = [
     tagline: "Calm, bilingual habit tracker",
     description:
       "Streaks, a heatmap and a monthly calendar, fully offline. Arabic is complete down to the details: right-to-left layout, Arabic-Indic digits, Arabic plural forms and weeks that start on Saturday.",
-    tags: ["Bloc", "Hive", "get_it", "go_router"],
+    tags: ["Bloc (Cubit)", "Hive", "get_it", "go_router"],
     repo: "athar",
     image: "/projects/athar.webp",
   },

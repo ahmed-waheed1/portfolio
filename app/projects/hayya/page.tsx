@@ -8,7 +8,7 @@ const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 
 const TITLE = "Hayya case study | Ahmed Waheed";
 const DESCRIPTION =
-  "How I built Hayya, an offline prayer times, adhan and Qibla app in Flutter: a true-north compass, a reliable adhan, and Arabic support enforced by 900+ tests.";
+  "How I built Hayya, an offline prayer times, adhan and Qibla app in Flutter: a true-north compass, a reliable adhan and Arabic support enforced by 900+ tests.";
 
 export const metadata: Metadata = {
   title: TITLE,
@@ -166,7 +166,7 @@ export default function HayyaCaseStudy() {
               </h1>
               <p className="max-w-xl text-xl leading-relaxed text-sky-50">
                 An offline prayer times, adhan and Qibla app for Android, in
-                English and Arabic. No accounts, no ads, no analytics, and no
+                English and Arabic. No accounts, no ads, no analytics and no
                 prayer-time API.
               </p>
               <div className="mt-2 flex flex-wrap gap-3">
@@ -285,7 +285,7 @@ export default function HayyaCaseStudy() {
             <p className="text-lg leading-8 text-gray-700">
               Feature-first clean architecture: each feature has its own data,
               domain and presentation layers. State lives in Cubits,
-              dependencies are wired with get_it, and routing uses go_router.
+              dependencies are wired with get_it and routing uses go_router.
             </p>
           </div>
           <ul className="flex min-w-0 flex-[1_1_30rem] flex-wrap content-start gap-2.5">

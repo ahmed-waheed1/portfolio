@@ -38,7 +38,7 @@ export default function About() {
           <p className="text-lg leading-8 text-gray-800">
             I graduated in 2026 with a Bachelor of Computers and Information
             from Zagazig University, came through the ALX Software Engineering
-            Program, and served on the Flutter Core Team at GDG on Campus
+            Program and served on the Flutter Core Team at GDG on Campus
             Zagazig. I&apos;m looking for a junior role where I can ship real
             features and keep learning.
           </p>

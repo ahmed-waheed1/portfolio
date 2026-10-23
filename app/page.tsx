@@ -32,7 +32,7 @@ export default function Home() {
             <p className="max-w-xl text-lg leading-8 text-gray-800">
               I am a Software Engineer and Flutter Developer passionate about
               building mobile apps. I&apos;m looking for junior developer
-              opportunities where I can contribute, learn, and grow.
+              opportunities where I can contribute, learn and grow.
             </p>
 
             <SocialLinks />

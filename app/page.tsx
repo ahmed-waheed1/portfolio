@@ -32,7 +32,7 @@ export default function Home() {
             <p className="max-w-xl text-lg leading-8 text-gray-800">
               I am a Software Engineer and Flutter Developer passionate about
               building mobile apps. I&apos;m looking for junior developer
-              opportunities where I can contribute, learn, and grow.
+              opportunities where I can contribute, learn and grow.
             </p>
 
             <SocialLinks />
@@ -55,7 +55,7 @@ export default function Home() {
               alt="Illustration of a developer coding at a desk"
               width={640}
               height={520}
-              priority
+              loading="eager"
               className="h-auto w-full max-w-[640px] motion-safe:animate-float-slow"
             />
           </div>

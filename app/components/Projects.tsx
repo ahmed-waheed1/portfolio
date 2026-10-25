@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import SectionHeading from "./SectionHeading";
 
 const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
@@ -14,6 +15,7 @@ type Project = {
   repo: string;
   image: string;
   status?: string;
+  caseStudy?: string;
 };
 
 const PROJECTS: Project[] = [
@@ -22,11 +24,12 @@ const PROJECTS: Project[] = [
     arabicName: "حيّ",
     tagline: "Offline prayer times, adhan & Qibla",
     description:
-      "Calculates prayer times on the device, plays the adhan on Android's alarm stream with schedules restored after a reboot, and corrects the Qibla compass to true north with its own World Magnetic Model, tested against all 100 of NOAA's reference values.",
-    tags: ["Bloc", "get_it", "Hive", "WorkManager"],
+      "Calculates prayer times on the device. It plays the adhan on Android's alarm stream with schedules restored after a reboot and corrects the Qibla compass to true north with its own World Magnetic Model, tested against all 100 of NOAA's reference values.",
+    tags: ["Bloc (Cubit)", "get_it", "Hive", "WorkManager"],
     repo: "hayya",
     image: "/projects/hayya.webp",
     status: "In closed testing on Google Play",
+    caseStudy: "/projects/hayya/",
   },
   {
     name: "Yalla Quiz",
@@ -34,7 +37,7 @@ const PROJECTS: Project[] = [
     tagline: "Real-time multiplayer trivia",
     description:
       "Friends join a room with a code or QR scan and race the same server-synced clock. If the host drops, the next player takes over, and every player sees their own language, English or Arabic, in the same room.",
-    tags: ["Firebase Realtime DB", "Bloc", "fpdart", "Web"],
+    tags: ["Firebase Realtime Database", "Bloc (Cubit)", "fpdart", "Web"],
     repo: "yalla_quiz",
     image: "/projects/yalla-quiz.webp",
   },
@@ -44,7 +47,7 @@ const PROJECTS: Project[] = [
     tagline: "Calm, bilingual habit tracker",
     description:
       "Streaks, a heatmap and a monthly calendar, fully offline. Arabic is complete down to the details: right-to-left layout, Arabic-Indic digits, Arabic plural forms and weeks that start on Saturday.",
-    tags: ["Bloc", "Hive", "get_it", "go_router"],
+    tags: ["Bloc (Cubit)", "Hive", "get_it", "go_router"],
     repo: "athar",
     image: "/projects/athar.webp",
   },
@@ -52,7 +55,7 @@ const PROJECTS: Project[] = [
     name: "Body Lens",
     tagline: "On-device posture & body analysis",
     description:
-      "Detects 33 body landmarks fully on-device with Google ML Kit, draws a live skeleton overlay from photos or the camera, and scores symmetry from 0 to 100 with posture issues called out.",
+      "Detects 33 body landmarks fully on-device with Google ML Kit, draws a live skeleton overlay from photos or the camera and scores symmetry from 0 to 100 with posture issues called out.",
     tags: ["ML Kit", "Camera", "Riverpod", "Clean Architecture"],
     repo: "body_lens",
     image: "/projects/body-lens.webp",
@@ -61,7 +64,7 @@ const PROJECTS: Project[] = [
     name: "Spendly",
     tagline: "Offline-first budget & expense tracker",
     description:
-      "Per-category budgets with 80% spending alerts, pie and bar charts, CSV and PDF export, and full English and Arabic support with automatic right-to-left layout.",
+      "Per-category budgets with 80% spending alerts, pie and bar charts, CSV and PDF export and full English and Arabic support with automatic right-to-left layout.",
     tags: ["Riverpod", "Drift", "go_router", "fl_chart"],
     repo: "spendly",
     image: "/projects/spendly.webp",
@@ -70,7 +73,7 @@ const PROJECTS: Project[] = [
     name: "Rootine",
     tagline: "Habit tracker & streak analytics",
     description:
-      "Daily check-ins, current and longest streaks, a 30-day heatmap, and reminders that reschedule after a reboot. The streak calculator is pure Dart and covered by unit tests.",
+      "Daily check-ins, current and longest streaks, a 30-day heatmap and reminders that reschedule after a reboot. The streak calculator is pure Dart and covered by unit tests.",
     tags: ["Riverpod", "Hive", "fl_chart", "Unit tests"],
     repo: "rootine",
     image: "/projects/rootine.webp",
@@ -151,19 +154,30 @@ function ProjectCard({ project }: { project: Project }) {
           ))}
         </ul>
 
-        <a
-          href={`${GITHUB}/${project.repo}`}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex min-h-11 w-fit items-center gap-2 rounded-sm font-semibold text-brand-accent hover:text-brand-cta-hover focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-gray-900"
-        >
-          View source
-          <span className="sr-only">
-            {" "}
-            for {project.name} on GitHub (opens in new tab)
-          </span>
-          <ArrowIcon />
-        </a>
+        <div className="flex flex-wrap items-center gap-x-6">
+          {project.caseStudy && (
+            <Link
+              href={project.caseStudy}
+              className="inline-flex min-h-11 w-fit items-center gap-2 rounded-sm font-semibold text-brand-accent hover:text-brand-cta-hover focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-gray-900"
+            >
+              Read case study
+              <span className="sr-only"> for {project.name}</span>
+            </Link>
+          )}
+          <a
+            href={`${GITHUB}/${project.repo}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex min-h-11 w-fit items-center gap-2 rounded-sm font-semibold text-brand-accent hover:text-brand-cta-hover focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-gray-900"
+          >
+            View source
+            <span className="sr-only">
+              {" "}
+              for {project.name} on GitHub (opens in new tab)
+            </span>
+            <ArrowIcon />
+          </a>
+        </div>
       </div>
     </article>
   );

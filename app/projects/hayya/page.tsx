@@ -101,7 +101,8 @@ function Phone({
   className?: string;
   cropped?: boolean;
 }) {
-  // cropped phones sit on the header's bottom edge, so they have no bottom border
+  // cropped phones sit on the header's bottom edge, so they have no bottom
+  // border; they're also above the fold, so they load eagerly
   const frame = cropped
     ? "rounded-t-[1.75rem] border-b-0"
     : "rounded-[2rem] shadow-2xl shadow-gray-900/30";
@@ -114,6 +115,7 @@ function Phone({
         alt={alt}
         width={400}
         height={711}
+        loading={cropped ? "eager" : "lazy"}
         className="h-auto w-full"
       />
     </div>

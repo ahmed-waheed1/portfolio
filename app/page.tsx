@@ -55,7 +55,7 @@ export default function Home() {
               alt="Illustration of a developer coding at a desk"
               width={640}
               height={520}
-              priority
+              loading="eager"
               className="h-auto w-full max-w-[640px] motion-safe:animate-float-slow"
             />
           </div>
